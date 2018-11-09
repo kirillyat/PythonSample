@@ -39,12 +39,5 @@ def chooseSORT(massive):  #СОРТИРОВКА ВЫБОРОМ
     massive[j], massive[i] = massive[i], massive[j]
     
     return massive
-    '''
+'''
 
-
-def main():
-    outputt(insertionSORT((inputt())))
-    
-    pass
-
-main()
