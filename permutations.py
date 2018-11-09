@@ -1,17 +1,17 @@
-#ПЕРЕСТАНОВКИ ЧИСЕЛ
+# ВСЕВОЗМОЖНЫЕ ПЕРЕСТАНОВКИ ЧИСЕЛ ЧЕРЕЗ РЕКУРСИЮ
 
-def inputt():
+def inputt(): # ВВОД МАССИВА ЧИСЕЛ
     massive = list(map(int, input().split()))
     return massive
 
-def outputt(massive):
+def outputt(massive): # ВЫВОД 
     for i in massive:
         print(i, '  ', end='')
     print('\n')
     pass
 
-def permutations(massive, begin):
-    if begin == len(massive):
+def permutations(massive, begin): # РЕКУРСИОННАЯ ФУНКЦИЯ ФИКСИРУЩАЯ 1 ЭЛЕМЕНТ, ПОКА НЕ ДОЙДЕТ ДО ПОСЛЕДНЕГО
+    if begin == len(massive):     
         outputt(massive)
     else:
         for i in range(begin, len(massive)):
