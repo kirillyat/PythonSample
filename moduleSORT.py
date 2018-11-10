@@ -31,7 +31,7 @@ def chooseSORT(massive):  #СОРТИРОВКА ВЫБОРОМ
     return massive
 
 '''
-    def insertionSORT(massive):  #СОРТИРОВКА ВСТАВКАМИ
+def insertionSORT(massive):  #СОРТИРОВКА ВСТАВКАМИ
     for i in range(len(massive)-1):
     j=i
     while 0 < j and massive[j] < massive[j-1]:
